@@ -7,7 +7,7 @@
 # Email: pietro.marangon@gmail.com
 # SFTP function by unixfox and Pe46dro
 
-backup_path="/root"
+backup_path="/tmp"
 
 create_backup() {
   umask 177
@@ -52,7 +52,7 @@ TYPE=1
 # Don't Edit Below This Line #
 ##############################
 
-d=$(date --iso)
+d=$(date +%u)
 cd $backup_path
 create_backup
 
